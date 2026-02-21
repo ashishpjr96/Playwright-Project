@@ -1,0 +1,26 @@
+package Test;
+
+
+	import com.microsoft.playwright.*;
+	import com.microsoft.playwright.options.*;
+	import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+	import java.util.*;
+
+	public class Cricbuzz {
+	  public static void main(String[] args) {
+	    try (Playwright playwright = Playwright.create()) {
+	      Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
+	        .setHeadless(false));
+	      BrowserContext context = browser.newContext();
+	      Page page = context.newPage();
+	      page.navigate("https://www.cricbuzz.com/");
+	      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Live Scores")).click();
+	      assertThat(page.locator("h1")).containsText("live cricket score");
+	      assertThat(page.getByText("International", new Page.GetByTextOptions().setExact(true))).isVisible();
+	      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Scorecard |")).first().click();
+	      page.getByText("Total179-5 (19.2 Overs, RR: 9").nth(1).click();
+	      page.getByText("-5").nth(4).click();
+	      page.navigate("https://www.cricbuzz.com/cricket-match/live-scores");
+	    }
+	  }
+	}

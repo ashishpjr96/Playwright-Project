@@ -1,0 +1,19 @@
+INDEX VERSION 1.131+D:\Eclipse-Playwright Project\.metadata\.plugins\org.eclipse.jdt.core
+1268070056.index
+763552950.index
+3753526527.index
+1076971412.index
+3122170752.index
+2581055007.index
+1865797976.index
+1825611972.index
+2207821032.index
+2900076141.index
+3276246366.index
+1537800285.index
+1166898066.index
+2032437269.index
+1628142435.index
+717519327.index
+4252985345.index
+1629729403.index

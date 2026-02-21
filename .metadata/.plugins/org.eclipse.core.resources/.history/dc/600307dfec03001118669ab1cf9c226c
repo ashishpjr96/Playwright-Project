@@ -1,0 +1,13 @@
+package Test;
+
+import com.microsoft.playwright.Playwright;
+
+public class FirstTest {
+    public static void main(String[] args) {
+
+        try (Playwright playwright = Playwright.create()) {
+            // Playwright starts here
+        }
+
+    }
+}

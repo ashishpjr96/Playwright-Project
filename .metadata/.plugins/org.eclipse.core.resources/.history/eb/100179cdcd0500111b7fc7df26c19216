@@ -1,0 +1,32 @@
+package Test;
+
+import org.testng.annotations.Test;
+
+import com.microsoft.playwright.Locator;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.AriaRole;
+
+import base.BaseTest;
+
+public class easemytrip extends BaseTest{
+	  @Test
+public void test() {
+	    page.navigate("https://www.easemytrip.com/");
+	    page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("From")).click();
+	    page.getByText("Mumbai(BOM)").click();
+	    page.locator("#a_Editbox13_show").fill("par");
+	    page.getByRole(AriaRole.PARAGRAPH).filter(new Locator.FilterOptions().setHasText("Paris(PAR)")).click();
+	    page.getByText("11₹ 24934").click();
+	    page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Return")).click();
+	    page.getByText("Book a round trip to save more").click();
+	    page.getByText("14₹ 34483").click();
+	    page.locator("#iDownArr").click();
+	    page.locator("#spanpEconomy").click();
+	    page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Done")).click();
+	    page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Search")).click();
+	    page.getByRole(AriaRole.IMG, new Page.GetByRoleOptions().setName("fastest")).click();
+	    page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Book Now")).click();
+	//    assertThat(page.locator("#divLoadFltDetails")).containsText("Mumbai to Paris");
+	  }
+	}
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.microsoft.playwright.Playwright"/>
+    <fullyQualifiedTypeName name="com.microsoft.playwright.Browser"/>
+    <fullyQualifiedTypeName name="com.microsoft.playwright.Page"/>
+    <fullyQualifiedTypeName name="com.microsoft.playwright.BrowserType.LaunchOptions"/>
+    <fullyQualifiedTypeName name="com.microsoft.playwright.BrowserType"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+    <fullyQualifiedTypeName name="com.microsoft.playwright.Locator"/>
+    <fullyQualifiedTypeName name="base.BaseTest"/>
+</qualifiedTypeNameHistroy>

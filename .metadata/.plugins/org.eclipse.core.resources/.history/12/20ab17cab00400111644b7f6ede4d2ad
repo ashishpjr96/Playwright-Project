@@ -1,0 +1,10 @@
+<suite name="PalywrightSuite">
+
+	<test name="BasicTests">
+		<Classes>
+			<Class name="FirstTest" />
+
+		</Classes>
+
+	</test>
+</suite>
